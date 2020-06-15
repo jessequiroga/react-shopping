@@ -29,7 +29,7 @@
         "test": "react-scripts test",
         "eject": "react-scripts eject",
         "prettier": "prettier --write .",
-        "lint": "tsc --noEmit && .\\node_modules\\.bin\\eslint \"src/**/*.{js,ts,tsx,jsx}\" --quiet --fix"
+        "lint": "./node_modules/.bin/tsc --noEmit && ./node_modules/.bin/eslint \"src/**/*.{js,ts,tsx,jsx}\" --quiet --fix"
     },
     "husky": {
         "hooks": {
