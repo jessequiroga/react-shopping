@@ -1,0 +1,36 @@
+image: node:12.16.1
+
+cache:
+    paths:
+        - node_modules/
+        - .yarn
+
+stages:
+    - install
+    - lint
+    - test
+    - build
+
+install:
+    stage: install
+    script:
+        - yarn install
+        - echo "Install"
+
+lint:
+    stage: lint
+    script:
+        - yarn lint
+        - echo "ESLint"
+
+build:
+    stage: build
+    script:
+        - yarn build
+        - echo "Build"
+
+test:
+    stage: test
+    script:
+        - yarn test
+        - echo "Test"
