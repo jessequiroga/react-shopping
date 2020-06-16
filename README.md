@@ -1,4 +1,3 @@
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -42,9 +41,10 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-=======
+# To learn React, check out the [React documentation](https://reactjs.org/).
+
 # React Shopping Experience
 
 React workshops
->>>>>>> 1458a064e84106cd4d6bccef12bad6d34d093751
+
+> > > > > > > 1458a064e84106cd4d6bccef12bad6d34d093751
