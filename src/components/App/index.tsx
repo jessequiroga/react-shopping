@@ -14,7 +14,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import HomeIcon from '@material-ui/icons/Home';
 import InfoIcon from '@material-ui/icons/Info';
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
-import { LoginPage } from 'pages';
+import { LoginPage, ProductPage } from 'pages';
 
 const useStyles = makeStyles((theme) => ({
     drawerPaper: { width: 'inherit' },
@@ -75,16 +75,7 @@ export function App() {
                         </Container>
                     </Route>
                     <Route path="/login" component={LoginPage} />
-                    <Route expect path="/">
-                        <Container>
-                            <Typography variant="h3" gutterBottom>
-                                Products
-                            </Typography>
-                            <Typography variant="body1" gutterBottom>
-                                Product List
-                            </Typography>
-                        </Container>
-                    </Route>
+                    <Route expect path="/" component={ProductPage} />
                 </Switch>
             </div>
         </Router>
