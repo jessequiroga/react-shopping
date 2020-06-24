@@ -19,6 +19,7 @@ import { LoginPage, ProductPage } from 'pages';
 const useStyles = makeStyles((theme) => ({
     drawerPaper: { width: 'inherit' },
     link: { textDecoration: 'none', color: theme.palette.text.primary },
+    drawerStyle: { width: '220px', anchor: 'left' },
 }));
 
 export function App() {
@@ -28,10 +29,9 @@ export function App() {
         <Router>
             <div style={{ display: 'flex' }}>
                 <Drawer
-                    style={{ width: '220px' }}
                     variant="persistent"
-                    anchor="left"
                     open={true}
+                    className={classes.drawerStyle}
                     classes={{ paper: classes.drawerPaper }}
                 >
                     <List>
