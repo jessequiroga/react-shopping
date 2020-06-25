@@ -10,6 +10,7 @@ stages:
     - lint
     - test
     - build
+    - deploy
 
 install:
     stage: install
@@ -34,3 +35,13 @@ test:
     script:
         - yarn test
         - echo "Test"
+
+deploy:
+    stage: deploy
+    only:
+        - master
+    script:
+        - yarn
+        - yarn run build
+        - firebase use shop-tutorial --token $FIREBASE_TOKEN
+        - firebase deploy --only hosting -m "Pipe $CI_PIPELINE_ID Build $CI_BUILD_ID" --token $FIREBASE_TOKEN
